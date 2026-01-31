@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Dark</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* ===== BODY ===== */
+body{
+  font-family:'Poppins',sans-serif;
+  background:#0e0f0f;
+  color:#eaeaea;
+  padding-top:70px; /* ruang untuk navbar fixed */
+}
+
+/* ===== NAVBAR ===== */
+nav{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:70px;
+  background:#121414;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 40px;
+  z-index:10;
+}
+
+nav h1{
+  font-size:20px;
+  color:#f4b400;
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+  gap:25px;
+}
+
+nav ul li a{
+  color:#eaeaea;
+  text-decoration:none;
+  font-size:14px;
+}
+
+.nav-btn{
+  background:#f4b400;
+  color:#121414;
+  padding:6px 14px;
+  border-radius:20px;
+  font-weight:bold;
+}
+
+/* ===== HERO ===== */
+.hero{
+  min-height:calc(100vh - 70px);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero-content{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:25px;
+}
+
+.hero img{
+  width:260px;
+  height:320px;
+  object-fit:cover;
+  border-radius:10px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.5);
+}
+
+.hero-text h2{
+  font-family:'Playfair Display',serif;
+  font-size:80px;
+  line-height:0.9;
+  color:#eaeaea;
+}
+
+.hero-text h2 span{
+  color:#f4b400;
+}
+
+.hero-text p{
+  margin-top:10px;
+  font-size:14px;
+  max-width:500px;
+  margin-left:auto;
+  margin-right:auto;
+  color:#bbbbbb;
+}
+
+.scroll-btn{
+  margin-top:15px;
+  background:#f4b400;
+  color:#121414;
+  display:inline-block;
+  padding:12px 22px;
+  border-radius:30px;
+  font-weight:bold;
+  text-decoration:none;
+}
+
+/* ===== ABOUT ===== */
+.about{
+  padding:100px 40px;
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+}
+
+.about h2{
+  font-family:'Playfair Display',serif;
+  font-size:60px;
+  color:#f4b400;
+}
+
+.about p{
+  font-size:14px;
+  line-height:1.6;
+  color:#cccccc;
+}
+
+/* ===== RESUME ===== */
+.resume{
+  background:#121414;
+  padding:80px 40px;
+}
+
+.resume-grid{
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+}
+
+.block{
+  background:#1a1c1c;
+  padding:25px;
+  border-radius:8px;
+  border:1px solid #2a2a2a;
+}
+
+.block h3{
+  font-family:'Playfair Display',serif;
+  font-size:26px;
+  margin-bottom:15px;
+  color:#f4b400;
+}
+
+.block p{
+  font-size:13px;
+  margin-bottom:8px;
+  color:#cccccc;
+}
+
+/* ===== SKILLS ===== */
+.skills{
+  padding:80px 40px;
+  max-width:1100px;
+  margin:auto;
+}
+
+.skills h2{
+  font-family:'Playfair Display',serif;
+  font-size:50px;
+  margin-bottom:20px;
+  color:#f4b400;
+}
+
+.skill-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.skill-tags span{
+  background:#1f1f1f;
+  color:#f4b400;
+  padding:6px 12px;
+  border-radius:20px;
+  font-size:12px;
+  border:1px solid #333;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:#121414;
+  color:#888;
+  text-align:center;
+  padding:20px;
+  font-size:13px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:900px){
+  nav{
+    padding:0 20px;
+  }
+
+  nav ul{
+    gap:15px;
+    font-size:12px;
+  }
+
+  .hero-text h2{
+    font-size:60px;
+  }
+
+  .about{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+
+  .resume-grid{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <h1>Nisrina Nur Aini</h1>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#resume">Resume</a></li>
+    <li><a href="#skills">Work</a></li>
+    <li><a href="#" class="nav-btn">Get in touch</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <img src="c:\Users\TOSHIBA ADC\Downloads\Gemini_Generated_Image_d673hpd673hpd673.png" alt="profile">
+    <div class="hero-text">
+      <h2>PORT<span>FOLIO</span></h2>
+      <p>
+        Lulusan SMK jurusan Teknik Komputer dan Jaringan yang tertarik di dunia jaringan dan IT. Terbiasa mengerjakan instalasi, konfigurasi, dan troubleshooting jaringan dengan pendekatan yang rapi dan sederhana.
+      </p>
+      <a href="#about" class="scroll-btn">Scroll down</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div>
+    <h2>Hello,<br>I'm Nisrina Nur Aini</h2>
+  </div>
+  <div>
+    <p>
+      Halo, saya Nisrina Nur Aini, lulusan SMKN 1 Nglegok jurusan TKJ. Saya suka belajar hal baru seputar jaringan komputer, bisa kerja mandiri maupun bareng tim, dan siap ngembangin skill di bidang IT.
+    </p>
+    <p style="margin-top:15px;">
+      Email: nurnirina570@gmail.com <br>
+      Instagram: @nisrnaa.nur
+    </p>
+  </div>
+</section>
+
+<!-- RESUME -->
+<section class="resume" id="resume">
+  <div class="resume-grid">
+    <div class="block">
+      <h3>Pendidikan</h3>
+      <p>2023 - 2026 : SMKN 1 NGLEGOK (Teknik Komputer Jaringan)</p>
+    </div>
+
+    <div class="block">
+      <h3>Pengalaman</h3>
+      <p>Juli-Desember 2025 : PKL Network ISP di PT.Trisula Media Data</p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills" id="skills">
+  <h2>Keahlian</h2>
+  <div class="skill-tags">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>Networking</span>
+    <span>Fiber Optic</span>
+    <span>Linux</span>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 Portfolio Nisrina Nur Aini
+</footer>
+
+</body>
+</html>
